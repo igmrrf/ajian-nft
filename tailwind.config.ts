@@ -14,6 +14,10 @@ const config: Config = {
       "footer": "#000000",
       "footer-text": "#6F6F6F",
       "white": "#ffffff",
+      "default-border": "#CFCFCF",
+      "body-text": "#475467",
+      "card-text": "909090",
+      "mail": "#EB631D",
     },
     extend: {
       backgroundImage: {

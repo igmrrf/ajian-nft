@@ -20,8 +20,8 @@ const NavBar = () => {
     return setClicked(!clicked)
   }
   return (
-    <header className='flex flex-col'>
-      <nav className="z-50 sticky top-0 flex justify-between items-center bg-nav py-5 px-10 text-md w-full">
+    <header className='flex flex-col z-50 sticky top-0'>
+      <nav className=" flex justify-between items-center bg-nav py-5 px-10 text-md w-full">
 
         <div className='flex space-x-16 items-center'>
           {/* Logo */}

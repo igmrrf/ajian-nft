@@ -1,26 +1,69 @@
 import TipsCard from "@/components/cards/tips-card"
-import well from '../../public/Group 2944.svg'
-import RecentCard from "../../public/images/recent/2.png"
-// import PrintInstantlyCard from "@/components/cards/print-instantly"
 import RecentlyPrinted from "@/components/cards/recently-printed"
 import GetNFTCard from "@/components/cards/get-nft-card"
 import Button from "@/components/button"
 import PrintInstantlyCard from "@/components/cards/print-instantly"
+import well from '../../public/Group 2944.svg'
+import RecentCard from "../../public/images/recent/2.png"
+import gmGreen from "../../public/images/recent/0.png"
+import diamondBody from "../../public/images/recent/1.png"
+import sneakerHead from "../../public/images/recent/3.png"
+import ghost from "../../public/images/get_your_own/1.png"
+import ghost1 from "../../public/images/get_your_own/2.png"
+import ghost2 from "../../public/images/get_your_own/3.png"
+import ghost3 from "../../public/images/get_your_own/4.png"
 
 export default function Home() {
   return (
     <div className=" flex min-h-screen flex-col items-center py-10 px-36 space-y-10">
-
       <PrintInstantlyCard />
-
-      <GetNFTCard collection="sol" tag="col" price="10" path={RecentCard} />
-      <div className="flex flex-wrap gap-2 pb-10">
-        <RecentlyPrinted path={RecentCard} name="he" details="wow" time="12" />
-        <RecentlyPrinted path={RecentCard} name="he" details="wow" time="12" />
-        <RecentlyPrinted path={RecentCard} name="he" details="wow" time="12" />
-        <RecentlyPrinted path={RecentCard} name="he" details="wow" time="12" />
-        <RecentlyPrinted path={RecentCard} name="he" details="wow" time="12" />
+      <div className="w-full">
+        <h3 className="text-nav-text text-3xl text-left font-extrabold block"> NFTS RECENTLY PRINTED </h3>
       </div>
+      <div className="flex flex-wrap gap-5">
+        <RecentlyPrinted path={RecentCard} name="COOL LOOKING" details="MAGNET" time="16H AGO" />
+        <RecentlyPrinted path={gmGreen} name="GMBACK GREEN" details="MAGNET" time="16H AGO" />
+        <RecentlyPrinted path={diamondBody} name="DIAMOND BODY" details="MAGNET" time="12MIN" />
+        <RecentlyPrinted path={sneakerHead} name="SNEAKER HEAD" details="MAGNET" time="1D 12H" />
+      </div>
+      {/* util cards */}
+      <div className="flex flex-wrap gap-2">
+        <TipsCard name='Secure' details='hello world i am writing' path={well} />
+        <TipsCard name='Trusted' details='hello world i am writing' path={well} />
+        <TipsCard name='wow' details='We Ship To Every Country In The World For A Flat Fee' path={well} />
+      </div>
+
+      <div className="w-full">
+        <h3 className="text-nav-text text-3xl text-left font-extrabold block"> GET YOUR OWN NFT PRINTED </h3>
+      </div>
+      <div className="flex flex-wrap gap-5">
+        <GetNFTCard collection="RICH GHOST" tag="MAGNET" price="225" path={ghost} />
+        <GetNFTCard collection="RICH GHOST" tag="MAGNET" price="225" path={ghost1} />
+        <GetNFTCard collection="RICH GHOST" tag="MAGNET" price="225" path={ghost2} />
+        <GetNFTCard collection="RICH GHOST" tag="MAGNET" price="225" path={ghost3} />
+      </div>
+
+      {/* MINT THEN PRINT */}
+      <div className="w-full flex flex-col items-center justify-around md:flex-row h-[500px] bg-coral">
+        <div className="flex flex-col items-center py-10 h-[480px] justify-between">
+
+          <div className="flex-col justify-start items-center space-y-4 ">
+            <h4 className="text-white text-4xl font-bold "> MINT THEN PRINT</h4>
+            <Button name="PRINT NFT" className="bg-mail" />
+          </div>
+          <p className="w-2/3 text-left text-white">Choose the product that you want to print your NFT art on and select a size you want. </p>
+        </div>
+        <div className="flex gap-5 mr-10">
+
+          <RecentlyPrinted path={diamondBody} name="DIAMOND BODY" details="MAGNET" time="12MIN" />
+          <div className="-mt-10">
+            <RecentlyPrinted path={sneakerHead} name="SNEAKER HEAD" details="MAGNET" time="1D 12H" />
+          </div>
+        </div>
+      </div>
+
+
+
       {/* util cards */}
       <div className="flex flex-wrap gap-2">
         <TipsCard name='Secure' details='hello world i am writing' path={well} />

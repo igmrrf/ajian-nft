@@ -9,23 +9,11 @@ const PrintInstantlyCard = () => {
 
       <div className=" flex flex-col border-default-border border-2 md:my-5 md:mx-10 md:flex-row">
         <div className='relative w-[300px] h-[300px]'>
-          {/* <Image */}
-          {/*   src={nft1} */}
-          {/*   height={250} */}
-          {/*   width={300} */}
-          {/*   alt="Home image" */}
-          {/*   sizes="(max-width: 768px) 300px, (max-width: 1200px) 50vw, 33vw" */}
-          {/*   style={{ objectFit: "contain" }} */}
-          {/*   className='hidden md:block' */}
-          {/* /> */}
 
           <Image
             src={nft1}
             fill
             alt="Home image"
-          // sizes="(max-width: 768px) 300px, (max-width: 1200px) 50vw, 33vw"
-          // style={{ objectFit: "contain" }}
-          // className='md:hidden'
           />
         </div>
         <div className="px-5 md:px-10 py-5">

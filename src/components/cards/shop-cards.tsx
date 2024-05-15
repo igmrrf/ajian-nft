@@ -3,17 +3,17 @@ import { cn } from "@/utils/tailwind-class";
 import Image, { StaticImageData } from "next/image";
 import { BsArrowRight } from "react-icons/bs";
 
-interface GetNFTCardType {
+interface ShopCardProp {
   collection: string,
   tag: string,
   path: StaticImageData,
   price: string,
 }
 
-const GetNFTCard: FC<GetNFTCardType> = ({ collection, tag, path, price }) => {
+const ShopCard: FC<ShopCardProp> = ({ collection, tag, path, price }) => {
   return (
     <div className={cn(" flex items-center flex-col ")}>
-      <div className='relative w-[250px] h-[250px]' >
+      <div className='relative w-[200px] h-[250px]' >
         <Image
           src={path}
           alt={tag}
@@ -37,4 +37,4 @@ const GetNFTCard: FC<GetNFTCardType> = ({ collection, tag, path, price }) => {
   )
 }
 
-export default GetNFTCard;
+export default ShopCard;

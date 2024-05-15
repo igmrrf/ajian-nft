@@ -18,6 +18,7 @@ const config: Config = {
       "body-text": "#475467",
       "card-text": "909090",
       "mail": "#EB631D",
+      "coral": "#1F2342"
     },
     extend: {
       backgroundImage: {

@@ -1,4 +1,4 @@
-import GetCredit from '@/components/cards/credit-card'
+import CartCard from '@/components/cards/cart'
 import React from 'react'
 import one from '/public/images/cart/1.png'
 import Button from '@/components/button'
@@ -17,10 +17,8 @@ const page = () => {
         <h3 className='text-5xl font-black'> YOUR SHOPPING CART </h3>
         <div className='w-full flex gap-5'>
           <div className=' w-3/4 flex flex-col gap-4'>
-            <GetCredit name='BB3 - BEEP3R #72 (ETHSF EDITION)' collection='4 x 4 MAGNET' price='25' path={one} />
-            <GetCredit name='BB3 - BEEP3R #72 (ETHSF EDITION)' collection='4 x 4 MAGNET' price='25' path={one} />
-            <GetCredit name='BB3 - BEEP3R #72 (ETHSF EDITION)' collection='4 x 4 MAGNET' price='25' path={one} />
-            <GetCredit name='BB3 - BEEP3R #72 (ETHSF EDITION)' collection='4 x 4 MAGNET' price='25' path={one} />
+            <CartCard name='BB3 - BEEP3R #72 (ETHSF EDITION)' collection='4 x 4 MAGNET' price='25' path={one} />
+            <CartCard name='BB3 - BEEP3R #72 (ETHSF EDITION)' collection='4 x 4 MAGNET' price='25' path={one} />
           </div>
           <div className='w-[300px] h-[300px] border-nav border'>
             <div className='border-b border-nav w-full flex py-3 px-5 text-card-text items-center justify-between'>

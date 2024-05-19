@@ -14,20 +14,20 @@ const page = () => {
         <h4 className='font-black md:text-5xl text-3xl'>CART</h4>
       </div>
       <div className='w-full space-y-5'>
-        <h3 className='text-5xl font-black'> YOUR SHOPPING CART </h3>
-        <div className='w-full flex gap-5'>
-          <div className=' w-3/4 flex flex-col gap-4'>
+        <h3 className='text-3xl md:text-5xl font-black'> YOUR SHOPPING CART </h3>
+        <div className='w-full flex flex-col md:flex-row gap-5'>
+          <div className='w-full md:w-3/4 flex flex-col gap-4'>
             <CartCard name='BB3 - BEEP3R #72 (ETHSF EDITION)' collection='4 x 4 MAGNET' price='25' path={one} />
             <CartCard name='BB3 - BEEP3R #72 (ETHSF EDITION)' collection='4 x 4 MAGNET' price='25' path={one} />
           </div>
-          <div className='w-[300px] h-[300px] border-nav border'>
+          <div className='w-full md:w-[300px] h-[300px] border-nav border'>
             <div className='border-b border-nav w-full flex py-3 px-5 text-card-text items-center justify-between'>
               <p>Subtotal </p>
               <p>$25 </p>
             </div>
             <div className='h-full px-4 flex flex-col justify-between'>
 
-              <div className='flex py-3 text-card-text items-center justify-between'>
+              <div className='flex py-3 text-coral font-bold items-center justify-between'>
                 <p>Subtotal </p>
                 <p>$25 </p>
               </div>

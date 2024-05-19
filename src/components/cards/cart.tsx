@@ -33,12 +33,12 @@ const CartCard: FC<CartCardType> = ({ collection, name, path, price }) => {
         <div className="flex-col flex items-start justify-center space-y-2">
           <span className="bg-card-text px-3 py-[1px] font-bold  text-coral"> ${price}.00</span>
           <p className="font-black text-coral text-md">{name} </p>
-          <p className="text-card-text font-bold text-xl"> {collection}</p>
+          <p className="text-card-text font-bold text-md md:text-xl"> {collection}</p>
         </div>
       </div>
       {/* buttons and bin */}
-      <div className="flex w-full justify-end pr-10 space-x-5 text-card-text">
-        <div className="flex border-r-2 h-[50px] border-nav pr-10 items-center space-x-2">
+      <div className="flex w-full justify-between md:justify-end px-5 md:px-0 md:pr-10 space-x-5 text-card-text">
+        <div className="flex md:border-r-2 h-[50px] border-nav pr-10 items-center space-x-2">
           <span onClick={addCounter}> <BsFillPlusSquareFill size={25} /> </span>
           <span className="bg-nav px-3 py-1 text-coral font-bold rounded">{counter} </span>
           <span onClick={redCounter}> <BsFillDashSquareFill size={25} /></span>

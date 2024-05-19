@@ -16,7 +16,7 @@ const config: Config = {
       "white": "#ffffff",
       "default-border": "#CFCFCF",
       "body-text": "#475467",
-      "card-text": "909090",
+      "card-text": "#909090",
       "mail": "#EB631D",
       "coral": "#1F2342"
     },

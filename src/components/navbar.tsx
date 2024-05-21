@@ -37,13 +37,15 @@ const NavBar = () => {
           {/* nav items */}
           <ul className='space-x-5 hidden md:block'>
             {nav.map((item) => (
-              <Link className={` ${item.link == currentPath ? 'text-zinc-900' : 'text-nav-text'} hover:text-sky-800 transition-colors font-bold `} key={item.name} href={item.link}> {item.name}</Link>
+              <Link className={` ${item.link == currentPath ? 'text-red-900' : 'text-nav-text'} hover:text-sky-800 transition-colors font-bold `} key={item.name} href={item.link}> {item.name}</Link>
             ))}
           </ul>
         </div>
         {/* shop & print now */}
         <div className=' items-center text-nav-text hidden md:flex'>
-          <FaShoppingCart size={25} />
+          <Link href='cart'>
+            <FaShoppingCart size={25} />
+          </Link>
           <Button name='print now' className='font-semibold bg-nav-button ml-5' />
         </div>
         <div className='block md:hidden' onClick={handleClick}> {clicked ? <RxCross2 size={25} /> : <RxHamburgerMenu size={25} />}</div>

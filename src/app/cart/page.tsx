@@ -13,6 +13,7 @@ const page = () => {
         <p> Back to top</p>
         <h4 className='font-black md:text-5xl text-3xl'>CART</h4>
       </div>
+
       <div className='w-full space-y-5'>
         <h3 className='text-3xl md:text-5xl font-black'> YOUR SHOPPING CART </h3>
         <div className='w-full flex flex-col md:flex-row gap-5'>

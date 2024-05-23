@@ -8,6 +8,8 @@ import first from "/public/images/collectables/2.png"
 import Button from "@/components/button";
 import ShopCard from "@/components/cards/shop-cards";
 import ghost1 from "/public/images/get_your_own/2.png"
+import CollectablesHistory from "@/components/cards/collectables/history-card";
+import placeholder from "/public/images/cart/1.png"
 
 const pages = () => {
   return (
@@ -27,16 +29,20 @@ const pages = () => {
           </div>
         </div>
       </div>
-      <div className="w-full flex flex-row gap-5 h-[500px]">
-        <div className="w-3/4 h-full relative">
-          <Image src={main} alt="main" fill />
+      {/* Image showcase */}
+      <div className="w-full flex flex-col md:flex-row gap-5 h-[500px]">
+        <div className="w-full md:w-3/4 h-full relative">
+          <Image src={main} alt="main" fill
+            className="object-cover" />
         </div>
-        <div className="w-1/4 flex flex-col gap-5 h-[500px]">
-          <div className="w-full relative h-1/2">
-            <Image src={second} alt="second" fill />
+        <div className="w-full md:w-1/4 flex flex-row md:flex-col gap-5 h-[500px]">
+          <div className="w-full relative md:h-1/2">
+            <Image src={second} alt="second" fill
+              className="object-cover" />
           </div>
-          <div className="w-full relative h-1/2">
-            <Image src={first} alt="second" fill />
+          <div className="w-full relative md:h-1/2">
+            <Image src={first} alt="second" fill
+              className="object-cover" />
           </div>
         </div>
       </div>
@@ -72,6 +78,7 @@ const pages = () => {
           <ShopCard collection="RICH GHOST" tag="MAGNET" price="225" path={ghost1} />
         </div>
       </div>
+      <CollectablesHistory collection="magnet" name="my" path={placeholder} price="24" date="12/august/2024" />
 
       <div className="flex space-x-10 w-full justify-end">
         <p className="flex font-light"> <span className="text-card-text"> <BsArrowLeft size={25} /></span> </p>

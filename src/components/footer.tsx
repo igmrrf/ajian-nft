@@ -24,7 +24,7 @@ const Footer = () => {
           <div className='text-sm md:w-1/2 mb-10 text-center md:text-start pt-7 md:pt-0'>
             <p>Do you have a problem with your delivery? Contact us: founder@nftprintpro.com
             </p>
-            <p className='mt-5'> We've partnered with various printing shops to bring you the best prints the Web3 space can provide.
+            <p className='mt-5'> We&apos;ve partnered with various printing shops to bring you the best prints the Web3 space can provide.
             </p>
           </div>
         </div>

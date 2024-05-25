@@ -39,7 +39,7 @@ const UserCard: FC<UserCardTypes> = ({ name, address, path, facebook, discord, m
       <div className='flex flex-col w-full py-2 justify-between bg-white space-y-4'>
         <div className="text-left pl-2 text-nav-text text-sm">
           <span className="font-black text-xl uppercase">{name}</span>
-          <div className="flex space-x-2">
+          <div className="flex space-x-2 text-card-text font-bold">
             <span className="block text-card-text font-thin text-xs  ">{address}</span>
             <span onClick={handleCopy} className="hover:cursor-copy"> <BsCopy /></span>
           </div>

@@ -39,7 +39,7 @@ const CheckoutCard = () => {
               <div className='w-full border-nav border-2 flex items-center '>
                 <select className='p-2 w-full outline-none text-coral' {...register("country", { required: "select your country" })} >
                   {countries.map((country) => (
-                    <option>{country.name}</option>
+                    <option key={country.phonecode}>{country.name}</option>
                   ))}
                 </select>
               </div>
@@ -50,7 +50,7 @@ const CheckoutCard = () => {
               <div className='w-full border-nav border-2 flex items-center '>
                 <select className='p-2 w-full outline-none text-coral' {...register("state", { required: "select your state" })}>
                   {states.map((state) => (
-                    <option>{state.name}</option>
+                    <option key={state.name}>{state.name}</option>
                   ))}
                 </select>
               </div>

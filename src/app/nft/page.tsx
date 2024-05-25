@@ -42,7 +42,7 @@ const page = () => {
         <div className="w-1/3 space-y-3">
           <div className="border-nav border p-5 space-y-5">
             <h5 className="font-bold">ITEM DESCRIPTION </h5>
-            <p className="text-sm">Turn your NFT into a beautiful physical art frame. The smooth texture intensifies the image's natural look and feel. </p>
+            <p className="text-sm">Turn your NFT into a beautiful physical art frame. The smooth texture intensifies the image&apos;s natural look and feel. </p>
           </div>
           <div>
             <h5 className="font-bold pb-2">Select Size</h5>

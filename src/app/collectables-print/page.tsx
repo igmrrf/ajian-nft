@@ -62,7 +62,7 @@ const pages = () => {
         </div>
         <div className="w-full flex flex-col space-y-4 py-5 px-10 border-2 border-nav">
           <div > <h4 className="font-black text-coral text-2xl">CHOOSE A PRINT TYPE</h4></div>
-          <p className="text-md font-light">Turn your NFT into a beautiful physical art frame. The smooth texture intensifies the image's natural look and feel. </p>
+          <p className="text-md font-light">Turn your NFT into a beautiful physical art frame. The smooth texture intensifies the image&apos;s natural look and feel. </p>
         </div>
       </div>
       <div className="w-full">

@@ -3,9 +3,11 @@ import React, { useState } from "react"
 import UserCard from "@/components/cards/collectables/user-card"
 import banner from "/public/banner.png"
 import ghost1 from "/public/images/get_your_own/2.png"
-import cool from "/public/images/recent/0.png"
 import Image from "next/image"
-import CollectionsCard from "@/components/cards/collectables/collectables-card"
+import Media from "./media"
+import MyArt from "./my-art"
+import History from "./history"
+import Collectables from "./collectables-sec"
 
 
 const page = () => {
@@ -28,10 +30,10 @@ const page = () => {
             <p className="hover:text-body-text" onClick={() => setActiveContent('history')}>history </p>
           </div>
           <div className="w-full  flex md:flex-row flex-col md:justify-evenly justify-center items-center md:items-start  flex-wrap ">
-            {activeContent === "art" && <CollectionsCard name="Cool looking" details="magnet" path={cool} />}
-            {activeContent === "collectables" && <p> collectables</p>}
-            {activeContent === "media" && <p> media</p>}
-            {activeContent === "history" && <p> history </p>}
+            {activeContent === "art" && <MyArt />}
+            {activeContent === "collectables" && <Collectables />}
+            {activeContent === "media" && <Media />}
+            {activeContent === "history" && <History />}
           </div>
         </div>
       </div>

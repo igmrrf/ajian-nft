@@ -23,7 +23,7 @@ const page = () => {
           <UserCard name="ETHPEROR" address="1ExAmpLe0FaBiT...sSV5tsGaMF6hd" path={ghost1} facebook="#" discord="#" mail="#" />
         </div>
         <div className="md:w-3/4 w-full ">
-          <div className="w-full space-x-2 flex md:space-x-5 uppercase text-md py-3 md:px-5 font-black  md:text-xl">
+          <div className="w-full space-x-2 flex md:space-x-5 uppercase text-sm py-3 md:px-5 font-black  md:text-md">
             <p className="hover:text-body-text" onClick={() => setActiveContent('art')}>my art</p>
             <p className="hover:text-body-text" onClick={() => setActiveContent('collectables')}>collectables</p>
             <p className="hover:text-body-text" onClick={() => setActiveContent('media')}>media</p>

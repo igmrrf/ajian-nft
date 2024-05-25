@@ -37,7 +37,8 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
  
 
 ### Todo list
-- [ ] collectables design (make more responsive)
+- [x] collectables design (make more responsive)
 - [ ] collectables-print
 - [ ] lazy loading
-- [ ]
+- [ ] state management
+- [ ] fine tune

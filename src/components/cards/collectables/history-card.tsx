@@ -14,7 +14,7 @@ interface CollectablesHistoryTypes {
 
 const CollectablesHistory: FC<CollectablesHistoryTypes> = ({ collection, name, path, price, date }) => {
   return (
-    <div className={cn("w-full flex items-center justify-between flex-row border-2 border-nav")}>
+    <div className={cn("w-full flex items-center justify-between flex-col md:flex-row border-2 border-nav")}>
 
       <div className="w-full flex space-x-5 items-center p-1 ">
         {/* Image */}
@@ -32,7 +32,7 @@ const CollectablesHistory: FC<CollectablesHistoryTypes> = ({ collection, name, p
         </div>
       </div>
       {/* buttons and bin */}
-      <div className="flex flex-col w-full md:w-1/3 md:items-end  md:justify-end px-5 md:px-0 md:pr-10 space-x-5 text-card-text">
+      <div className="flex flex-col items-center justify-center w-full md:w-1/3 md:items-end  md:justify-end px-5 md:px-0 md:pr-10 space-x-5 text-card-text">
         <p className="font-bold text-card-text"> Publish Date</p>
         <p className="text-xl font-bold">{date}</p>
       </div>

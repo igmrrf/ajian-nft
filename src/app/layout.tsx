@@ -7,7 +7,7 @@ import "./globals.css";
 const openSans = Open_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "NTF print pro",
+  title: "Home | NTF Print Pro",
   description: "Instantly print your NFT and have it delivered in a week",
 };
 

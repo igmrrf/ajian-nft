@@ -1,6 +1,12 @@
 import { BsCheck2 } from "react-icons/bs";
 import placeholder from "/public/placeholder.png"
 import StepsCard from "@/components/cards/steps-card";
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'How To Print| NFT PrintPro',
+  description: 'Print and ship NFTs world wide',
+}
 
 const page = () => {
   return (

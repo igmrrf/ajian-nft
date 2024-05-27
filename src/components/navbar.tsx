@@ -55,7 +55,7 @@ const NavBar = () => {
       {/* nav items */}
       <ul className={cn(`flex flex-col space-y-10 justify-center items-center h-svh bg-nav md:hidden ${clicked ? "flex" : "hidden"}`)} >
         {nav.map((item) => (
-          <Link className={` ${item.link == currentPath ? 'text-zinc-900' : 'text-nav-text'} hover:text-sky-800 transition-colors font-bold `} key={item.name} href={item.link}> {item.name}</Link>
+          <Link onClick={handleClick} className={` ${item.link == currentPath ? 'text-zinc-900' : 'text-nav-text'} hover:text-sky-800 transition-colors font-bold `} key={item.name} href={item.link}> {item.name}</Link>
         ))}
         <Button name='print now' className='font-semibold bg-nav-button ml-5' />
       </ul>

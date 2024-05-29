@@ -70,7 +70,7 @@ const NewArticleForm = () => {
             } />
           {errors?.article && <p className='text-red-100'> {errors.article.message}</p>}
         </div>
-        <Button name='MINT NFT ' type="submit" className="bg-nav-button" />
+        <Button name='MINT NFT ' className="bg-nav-button" />
       </form>
     </div>
   );

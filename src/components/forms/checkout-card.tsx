@@ -91,7 +91,7 @@ const CheckoutCard = () => {
 
       </div>
 
-      <Button type='submit' className="bg-nav-button font-bold" name="PAY $25" />
+      <Button className="bg-nav-button font-bold" name="PAY $25" />
     </form>
   )
 }

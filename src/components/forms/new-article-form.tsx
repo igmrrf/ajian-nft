@@ -26,7 +26,11 @@ const NewArticleForm = () => {
         }
       })} className='w-full mt-10 md:mt-0  space-y-5'>
         <div className='w-full flex justify-center items-center border-dashed border-nav border-2 py-10'>
-          <input type='file' {...register('image')} />
+          <div className='w-full flex items-center justify-center flex-col'>
+            <span className="font-thin px-2 py-1 bg-nav rounded"> Add files</span>
+            <label htmlFor='file' className="text-card-text">Accepts .gif .jpg and .png</label>
+          </div>
+          <input id='file' className="hidden" type='file' {...register('image')} />
         </div>
         {/* input for title  */}
 

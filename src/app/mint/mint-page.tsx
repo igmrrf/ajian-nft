@@ -15,7 +15,11 @@ const MintPage = () => {
       <div className='w-full flex flex-col-reverse justify-center items-start md:flex-row'>
         <div className='w-full mt-10 md:mt-0 md:w-1/2 space-y-5'>
           <div className='w-full flex justify-center items-center border-dashed border-nav border-2 py-10'>
-            <input type='file' />
+            <div className='w-full flex items-center justify-center flex-col'>
+              <span className="font-thin px-2 py-1 bg-nav rounded"> Add files</span>
+              <label htmlFor='file' className="text-card-text">Accepts .gif .jpg and .png</label>
+            </div>
+            <input id='file' className="hidden" type='file' />
           </div>
 
           <div className='w-full'>
@@ -34,7 +38,8 @@ const MintPage = () => {
         </div>
 
         <div className='w-full md:w-1/2 md:ml-5 py-10 bg-nav flex justify-center items-center'>
-          <RecentlyPrinted path={RecentCard} name="COOL LOOKING" details="MAGNET" time="16H AGO" />
+          <RecentlyPrinted path={RecentCard} name="COOL LOOKING" details="MAGNET" time="16H AGO" inStock={true} />
+
         </div>
       </div>
     </div>

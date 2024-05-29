@@ -10,8 +10,8 @@ const CreditPage = () => {
         <p className='text-sm font-thin pt-5'>Overview</p>
         <div className='w-full flex-col space-y-5 flex md:flex-row justify-between py-10 items-center'>
           <h4 className='text-3xl md:text-4xl font-black'>$245 Available credits </h4>
-          <div className='flex gap-5'>
-            <Button name='Get Credits' className='bg-coral' />
+          <div className='flex  flex-col md:flex-row gap-5'>
+            <Button name='Get Credits' className='bg-coral text-white ' />
             <Button name='Redeem Credits' className='bg-nav-button' />
           </div>
         </div>
@@ -19,7 +19,7 @@ const CreditPage = () => {
 
 
       <div className='flex flex-row flex-wrap'>
-        <GetCredit collection='MAGNET' tag='hello' price='250 Credits' path={money} />
+        <GetCredit collection='1,500' tag='15% DISCOUNT' price='250 Credits' path={money} />
       </div>
     </div>
   )

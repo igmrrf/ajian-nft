@@ -10,13 +10,21 @@ const AccountForm = () => {
           <div className='w-full md:w-1/2'>
             <label className='text-coral font-bold'> Upload avatar</label>
             <div className='w-full  flex justify-center items-center border-dashed border-nav border-2 py-10'>
-              <input type='file' />
+              <div className='w-full flex items-center justify-center flex-col'>
+                <span className="font-thin px-2 py-1 bg-nav rounded"> Add files</span>
+                <label htmlFor='file' className="text-card-text">Accepts .gif .jpg and .png</label>
+              </div>
+              <input id='file' className="hidden" type='file' />
             </div>
           </div>
           <div className='w-full md:w-1/2'>
             <label className='text-coral font-bold'> Upload cover</label>
             <div className='w-full  flex justify-center items-center border-dashed border-nav border-2 py-10'>
-              <input type='file' />
+              <div className='w-full flex items-center justify-center flex-col'>
+                <span className="font-thin px-2 py-1 bg-nav rounded"> Add files</span>
+                <label htmlFor='file' className="text-card-text">Accepts .gif .jpg and .png</label>
+              </div>
+              <input id='file' className="hidden" type='file' />
             </div>
           </div>
         </div>

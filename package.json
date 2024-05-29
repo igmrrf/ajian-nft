@@ -18,6 +18,7 @@
     "react-hook-form": "^7.51.5",
     "react-icons": "^5.2.1",
     "react-simplemde-editor": "^5.2.0",
+    "sharp": "^0.33.4",
     "tw-merge": "^0.0.1-alpha.3",
     "typescript-language-server": "^4.3.3",
     "zod": "^3.23.8"

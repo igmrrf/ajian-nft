@@ -8,13 +8,15 @@ interface RecentCard {
   name: string,
   details: string,
   path: StaticImageData,
-  time: string
+  time: string,
+  inStock: boolean
 }
 
-const RecentlyPrinted: FC<RecentCard> = ({ name, details, path, time }) => {
+const RecentlyPrinted: FC<RecentCard> = ({ name, details, path, time, inStock }) => {
   return (
     <div className={cn(" flex items-center flex-col")}>
       <div className='relative w-[250px] h-[250px]' >
+        {!inStock && <p className="bg-[#4B54A1] text-white py-1 px-2 uppercase z-10 top-5 left-5 text-sm font-bold rounded absolute">Out of stock </p>}
         <Image
           src={path}
           alt={name}

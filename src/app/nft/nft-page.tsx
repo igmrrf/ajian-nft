@@ -13,33 +13,38 @@ import Button from "@/components/button";
 
 const NftPage = () => {
   return (
-    <div className=" flex min-h-screen flex-col items-center py-10 px-36 pb-20 space-y-10">
+    <div className=" flex min-h-screen flex-col items-center py-10 md:px-36 px-5 pb-20 space-y-10">
       <div className="flex flex-col justify-center items-start space-y-10 py-10 px-8 w-full border-nav border-2">
         <div className="flex justify-start">
           <p className="flex font-light"> <span> <BsArrowLeft size={25} /></span> Prev page </p>
         </div>
-        <div className="flex justify-between w-full"> <h4 className="text-4xl font-black"> $255 | NFT PRINT PRO SHIRT </h4>
-          <div className='pt-2 flex space-x-2 text-black'>
+        <div className="flex justify-between w-full"> <h4 className="md:text-4xl text-xl font-black"> $255 | NFT PRINT PRO SHIRT </h4>
+          <div className='pt-2 flex flex-col items-center md:flex-row space-x-2 text-black'>
+            <div>
+              <p> share on media </p>
+            </div>
             {/* icons */}
-            <p> share on media </p>
-            <a href='#'><FaDiscord size={20} /> </a>
-            <a href='#'><FaFacebook size={20} /> </a>
-            <a href='#'><FaInstagram size={20} /> </a>
-            <a href='#'> <FaSquareXTwitter size={20} /></a>
+
+            <div className="flex space-x-2 ">
+              <a href='#'><FaDiscord size={20} /> </a>
+              <a href='#'><FaFacebook size={20} /> </a>
+              <a href='#'><FaInstagram size={20} /> </a>
+              <a href='#'> <FaSquareXTwitter size={20} /></a>
+            </div>
           </div>
         </div>
       </div>
 
       {/* select nft info */}
-      <div className="w-full gap-5 flex">
-        <div className="w-2/3 h-[400px] relative">
+      <div className="w-full gap-5 flex flex-col md:flex-row">
+        <div className="w-full md:w-2/3 h-[400px] relative">
           <Image
             src={PrintNftShirt}
             alt="two men wearing our shirts"
             fill
             className="object-cover" />
         </div>
-        <div className="w-1/3 space-y-3">
+        <div className="md:w-1/3 w-full space-y-3">
           <div className="border-nav border p-5 space-y-5">
             <h5 className="font-bold">ITEM DESCRIPTION </h5>
             <p className="text-sm">Turn your NFT into a beautiful physical art frame. The smooth texture intensifies the image&apos;s natural look and feel. </p>
@@ -71,7 +76,7 @@ const NftPage = () => {
       <div className="w-full">
         <h3 className="text-nav-text text-3xl text-left font-extrabold block"> MORE MERCH </h3>
       </div>
-      <div className="flex justify-between w-full flex-wrap gap-2">
+      <div className="flex md:justify-between justify-center w-full flex-wrap gap-2">
         <ShopCard collection="RICH GHOST" tag="MAGNET" price="225" path={ghost1} />
         <ShopCard collection="RICH GHOST" tag="MAGNET" price="225" path={ghost1} />
         <ShopCard collection="RICH GHOST" tag="MAGNET" price="225" path={ghost1} />

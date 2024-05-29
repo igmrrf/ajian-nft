@@ -12,7 +12,7 @@ interface TipsCard {
 
 const TipsCard: FC<TipsCard> = ({ name, details, path }) => {
   return (
-    <div className={cn("border-2 border-default-border rounded py-6 px-20 flex items-center flex-col w-[320px] ")}>
+    <div className={cn("border-2 border-default-border rounded py-6 px-5 flex items-center flex-col min-w-full md:min-w-[320px]  md:max-w-[360px]")}>
       <Image
         src={path}
         alt={name}

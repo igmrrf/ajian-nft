@@ -5,14 +5,14 @@ import { BsArrowRight, BsArrowLeft } from "react-icons/bs";
 
 const ShopPage = () => {
   return (
-    <div className=" flex min-h-screen flex-col items-center py-10 md:px-36 px-5 pb-20 space-y-10">
+    <div className="w-full flex min-h-screen flex-col items-center py-10 md:px-36 px-5 pb-20 space-y-10">
       <div className="flex flex-col justify-center items-start space-y-10 py-10 px-8 w-full border-nav border-2">
         <p className="font-medium text-md text-nav-text w-2/3">Get your own cool merch with NFTs printed on them hats, t-shirts, or coffee mugs. Take your pick! </p>
         <h3 className="font-black text-3xl md:text-5xl text-nav-text">BROWSE MERCH </h3>
       </div>
 
 
-      <div className="flex justify-between items-center flex-wrap gap-2">
+      <div className="w-full flex justify-center md:justify-between items-center flex-wrap gap-2">
         <ShopCard collection="RICH GHOST" tag="MAGNET" price="225" path={ghost1} />
         <ShopCard collection="RICH GHOST" tag="MAGNET" price="225" path={ghost1} />
         <ShopCard collection="RICH GHOST" tag="MAGNET" price="225" path={ghost1} />

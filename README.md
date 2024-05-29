@@ -38,9 +38,10 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ### Todo list
 - [x] collectables design (make more responsive)
+- [x] Set meta data 
 - [ ] make whole website responsive 
 - [ ] collectables-print
 - [ ] lazy loading
 - [ ] state management
 - [ ] fine tune
-- [ ] Set meta data 
+- [ ] OUT of Stock 

@@ -4,7 +4,13 @@ import NavBar from "@/components/navbar";
 import Footer from "@/components/footer";
 import "./globals.css";
 
-const openSans = Open_Sans({ subsets: ["latin"] });
+const openSans = Open_Sans({
+  subsets: ["latin"],
+  display: 'swap',
+  weight: '400',
+  style: ['normal', 'italic'],
+  variable: '--font-open-sans'
+});
 
 export const metadata: Metadata = {
   title: "Home | NTF Print Pro",
@@ -17,8 +23,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={openSans.className}>
+    <html lang="en" className={openSans.variable}>
+      <body className="font-sans">
         <NavBar />
         <main className="">
           {children}

@@ -20,7 +20,7 @@ const NavBar = () => {
     return setClicked(!clicked)
   }
   return (
-    <header className='flex flex-col z-50 sticky top-0'>
+    <header className='flex flex-col z-50 sticky top-0 font-sans'>
       <nav className=" flex justify-between items-center bg-nav py-5 px-10 text-md w-full">
 
         <div className='flex space-x-16 items-center'>
@@ -37,14 +37,14 @@ const NavBar = () => {
           {/* nav items */}
           <ul className='space-x-5 hidden md:block'>
             {nav.map((item) => (
-              <Link className={` ${item.link == currentPath ? 'text-red-900' : 'text-nav-text'} hover:text-sky-800 transition-colors font-bold `} key={item.name} href={item.link}> {item.name}</Link>
+              <Link className={` ${item.link == currentPath ? 'text-red-900' : 'text-nav-text'} hover:text-sky-800 transition-colors font-normal `} key={item.name} href={item.link}> {item.name}</Link>
             ))}
           </ul>
         </div>
         {/* shop & print now */}
         <div className=' items-center text-nav-text hidden md:flex'>
           <Link href='cart'>
-            <FaShoppingCart size={25} />
+            <FaShoppingCart className='hover:text-[#4B54A1]' size={25} />
           </Link>
           <Button name='print now' className='font-semibold bg-nav-button ml-5' />
         </div>
@@ -57,7 +57,7 @@ const NavBar = () => {
         {nav.map((item) => (
           <Link onClick={handleClick} className={` ${item.link == currentPath ? 'text-zinc-900' : 'text-nav-text'} hover:text-sky-800 transition-colors font-bold `} key={item.name} href={item.link}> {item.name}</Link>
         ))}
-        <Button name='print now' className='font-semibold bg-nav-button ml-5' />
+        <Button name='print now' className='font-semibold bg-nav-button ml-5 hover:cursor-pointer' />
       </ul>
     </header>
   )

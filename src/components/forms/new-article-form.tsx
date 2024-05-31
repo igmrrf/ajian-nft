@@ -1,13 +1,15 @@
 "use client"
 import Button from '@/components/button'
 import { BsQuestionCircle } from "react-icons/bs";
-import SimpleMDE from "react-simplemde-editor";
+// import SimpleMDE from "react-simplemde-editor";
 import "easymde/dist/easymde.min.css";
 import { useForm, Controller } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { createNewArticleSchema } from '../form-validators/validationSchema';
 import { z } from 'zod';
 type ArticleForm = z.infer<typeof createNewArticleSchema>
+import dynamic from 'next/dynamic'
+const SimpleMDE = dynamic(() => import('react-simplemde-editor'), { ssr: false })
 
 
 const NewArticleForm = () => {

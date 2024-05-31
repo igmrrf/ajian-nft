@@ -4,7 +4,6 @@ import { BsQuestionCircle } from "react-icons/bs";
 import SimpleMDE from "react-simplemde-editor";
 import "easymde/dist/easymde.min.css";
 import { useForm, Controller } from 'react-hook-form';
-import { useRouter } from 'next/navigation';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { createNewArticleSchema } from '../form-validators/validationSchema';
 import { z } from 'zod';
@@ -12,13 +11,12 @@ type ArticleForm = z.infer<typeof createNewArticleSchema>
 
 
 const NewArticleForm = () => {
-
   const { register, control, handleSubmit, formState: { errors } } = useForm<ArticleForm>({
     resolver: zodResolver(createNewArticleSchema)
   });
   return (
     <div className='w-full flex flex-col-reverse justify-center items-start md:flex-row'>
-      <form onSubmit={handleSubmit(async (data) => {
+      <form onSubmit={handleSubmit((data) => {
         try {
           console.log(data)
         } catch (err) {

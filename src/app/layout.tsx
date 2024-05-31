@@ -26,7 +26,7 @@ export default function RootLayout({
     <html lang="en" className={openSans.variable}>
       <body className="font-sans">
         <NavBar />
-        <main className="">
+        <main>
           {children}
         </main>
         <Footer />

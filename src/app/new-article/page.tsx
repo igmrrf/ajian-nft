@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import NewArticlePage from './new-article'
+import NewArticlePage from './new-article-page'
 
 export const metadata: Metadata = {
   title: 'New Article | NFT PrintPro',

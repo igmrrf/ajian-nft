@@ -1,29 +1,33 @@
-'use client'
+"use client";
 import { FC, useState } from "react";
 import { cn } from "@/utils/tailwind-class";
 import Image, { StaticImageData } from "next/image";
 
-
 interface CollectablesHistoryTypes {
-  collection: string,
-  name: string,
-  path: StaticImageData,
-  price: string,
-  date: string,
+  collection: string;
+  name: string;
+  path: StaticImageData;
+  price: string;
+  date: string;
 }
 
-const CollectablesHistory: FC<CollectablesHistoryTypes> = ({ collection, name, path, price, date }) => {
+const CollectablesHistory: FC<CollectablesHistoryTypes> = ({
+  collection,
+  name,
+  path,
+  price,
+  date,
+}) => {
   return (
-    <div className={cn("w-full flex items-center justify-between flex-col md:flex-row border-2 border-nav")}>
-
+    <div
+      className={cn(
+        "w-full flex items-center justify-between flex-col md:flex-row border-2 border-nav",
+      )}
+    >
       <div className="w-full flex space-x-5 items-center p-1 ">
         {/* Image */}
         <div className="relative w-[150px] h-[120px] mr-5">
-          <Image
-            src={path}
-            alt={name}
-            fill
-            className="object-cover" />
+          <Image src={path} alt={name} fill className="object-cover" />
         </div>
         <div className="flex-col flex items-start justify-center space-y-2">
           <span className="bg-card-text px-3 py-[1px] font-bold  text-coral"> ${price}.00</span>
@@ -37,7 +41,7 @@ const CollectablesHistory: FC<CollectablesHistoryTypes> = ({ collection, name, p
         <p className="text-xl font-bold">{date}</p>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default CollectablesHistory;

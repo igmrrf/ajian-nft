@@ -4,4 +4,4 @@ export const nav = [
   { name: "HOW TO PRINT", link: "how-to-print" },
   { name: "MINT", link: "mint" },
   { name: "COLLECTABLES", link: "collectables" },
-]
+];

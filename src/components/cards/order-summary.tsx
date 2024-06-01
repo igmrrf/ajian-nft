@@ -4,10 +4,10 @@ import Image, { StaticImageData } from "next/image";
 import { BsArrowRight } from "react-icons/bs";
 
 interface OrderSummaryType {
-  collection: string,
-  tag: string,
-  path: StaticImageData,
-  price: string,
+  collection: string;
+  tag: string;
+  path: StaticImageData;
+  price: string;
 }
 
 const OrderSummary: FC<OrderSummaryType> = ({ collection, tag, path, price }) => {
@@ -16,11 +16,7 @@ const OrderSummary: FC<OrderSummaryType> = ({ collection, tag, path, price }) =>
       <div className="m-2 flex flex-row">
         {/* Image */}
         <div className="relative w-[150px] h-[120px] mr-5">
-          <Image
-            src={path}
-            alt={tag}
-            fill
-            className="object-cover" />
+          <Image src={path} alt={tag} fill className="object-cover" />
         </div>
         {/* order info */}
         <div className="flex-col flex items-start justify-center space-y-2 pt-3">
@@ -35,7 +31,7 @@ const OrderSummary: FC<OrderSummaryType> = ({ collection, tag, path, price }) =>
         <p> $25</p>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default OrderSummary;

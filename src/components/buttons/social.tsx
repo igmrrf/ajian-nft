@@ -14,6 +14,7 @@ const SocialButton: FC<ButtonProps> = ({ name, className, link, icon: Icon }) =>
   return (
     <a
       href={link}
+      target="_blank"
       className={cn(
         "uppercase flex w-full font-black justify-between items-center space-x-2 px-2 py-1 text-white hover:py-2 ",
         className,

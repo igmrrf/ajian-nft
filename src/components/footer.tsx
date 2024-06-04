@@ -1,4 +1,5 @@
 import { getYear } from "@/utils/getyear";
+import Link from "next/link";
 import blackLogo from "../../public/logos/logo_white.svg";
 import Image from "next/image";
 import { FaDiscord, FaFacebook, FaInstagram } from "react-icons/fa";
@@ -33,19 +34,36 @@ const Footer = () => {
         <div className="flex justify-end space-x-9 md:w-1/2 text-sm">
           <div className="flex-col space-y-5">
             <h3>INFO</h3>
-            <div className="space-y-2 text-white">
-              <p className=""> How to print NFTs</p>
-              <p> Terms of Service</p>
-              <p>Privacy Policy</p>
+            <div className="space-y-2 text-white ">
+              <p>
+                {" "}
+                <Link href="/how-to-print">How to print NFTs</Link>{" "}
+              </p>
+              <p>
+                {" "}
+                <Link href="/terms-of-service">Terms Of Service</Link>{" "}
+              </p>
+              <p>
+                <Link href="/privacy-policy">Privacy Policy</Link>
+              </p>
             </div>
           </div>
 
           <div className="flex-col space-y-5">
-            <h3>INFO</h3>
+            <h3>MENU</h3>
             <div className="space-y-2 text-white">
-              <p className="">ABOUT</p>
-              <p> LEARN</p>
-              <p>CONNECT</p>
+              <p>
+                {" "}
+                <Link href="/about">ABOUT</Link>{" "}
+              </p>
+              <p>
+                {" "}
+                <Link href="/learn">LEARN</Link>{" "}
+              </p>
+              <p>
+                {" "}
+                <Link href="/connect">CONNECT</Link>{" "}
+              </p>
             </div>
           </div>
         </div>

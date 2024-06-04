@@ -34,7 +34,7 @@ const NavBar = () => {
           <ul className="space-x-5 hidden md:block">
             {nav.map((item) => (
               <Link
-                className={` ${item.link == currentPath ? "text-red-900" : "text-nav-text"} hover:text-sky-800 transition-colors font-normal `}
+                className={` ${item.link == currentPath ? "text-card-text" : "text-nav-text"} hover:text-card-text transition-colors font-normal `}
                 key={item.name}
                 href={item.link}
               >
@@ -49,7 +49,10 @@ const NavBar = () => {
           <Link href="cart">
             <FaShoppingCart className="hover:text-[#4B54A1]" size={25} />
           </Link>
-          <Button name="print now" className="font-semibold bg-nav-button ml-5" />
+          <Button
+            name="print now"
+            className="font-semibold bg-nav-button ml-5 hover:text-nav-button hover:bg-coral"
+          />
         </div>
         <div className="block md:hidden" onClick={handleClick}>
           {" "}
@@ -66,7 +69,7 @@ const NavBar = () => {
         {nav.map((item) => (
           <Link
             onClick={handleClick}
-            className={` ${item.link == currentPath ? "text-zinc-900" : "text-nav-text"} hover:text-sky-800 transition-colors font-bold `}
+            className={` ${item.link == currentPath ? "text-card-text" : "text-nav-text"} hover:text-sky-800 transition-colors font-bold `}
             key={item.name}
             href={item.link}
           >
@@ -76,7 +79,7 @@ const NavBar = () => {
         ))}
         <Button
           name="print now"
-          className="font-semibold bg-nav-button ml-5 hover:cursor-pointer"
+          className="font-semibold bg-nav-button ml-5 hover:cursor-pointer hover:text-nav-button hover:bg-coral"
         />
       </ul>
     </header>

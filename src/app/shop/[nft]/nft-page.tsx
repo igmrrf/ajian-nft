@@ -4,10 +4,10 @@ import ghost1 from "/public/images/get_your_own/2.png";
 import { BsArrowRight, BsArrowLeft } from "react-icons/bs";
 import { FaDiscord, FaFacebook, FaInstagram } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
-import PrintNftShirt from "../../../public/print.png";
+import PrintNftShirt from "/public/print.png";
 import Button from "@/components/button";
 
-const NftPage = () => {
+const NftPage = ({item}:{item: {nft:string}}) => {
   return (
     <div className=" flex min-h-screen flex-col items-center py-10 md:px-36 px-5 pb-20 space-y-10">
       <div className="flex flex-col justify-center items-start space-y-10 py-10 px-8 w-full border-nav border-2">
@@ -26,7 +26,8 @@ const NftPage = () => {
           <h4 className="md:text-4xl text-xl font-black"> $255 | NFT PRINT PRO SHIRT </h4>
           <div className="pt-2 flex flex-col items-center md:flex-row space-x-2 text-black">
             <div>
-              <p> share on media </p>
+              {/* TODO remove this  */}
+              <p> share on media{item.nft} </p>
             </div>
             {/* icons */}
 

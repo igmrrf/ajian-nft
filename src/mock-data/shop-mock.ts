@@ -3,7 +3,7 @@ interface CardMockProps {
   id: number;
   collection: string;
   tag: string;
-  path: string;
+  path: StaticImageData;
   price: string;
 }
 

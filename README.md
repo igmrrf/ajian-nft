@@ -45,4 +45,6 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 - [ ] add mock data  
 - [ ] lazy loading
 - [ ] state management
+- [ ] dynamic pages
 - [ ] fine tune
+- [ ] add content for  doc pages

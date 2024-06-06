@@ -7,10 +7,10 @@ export const metadata: Metadata = {
   description: 'Print and ship NFTs world wide',
 }
 
-const page = () => {
+const page = ({params}:{params: {nft:string}}) => {
   return (
     <div className="w-full">
-      <NftPage />
+      <NftPage item={params}/>
     </div>
   )
 }

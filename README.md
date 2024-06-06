@@ -42,9 +42,10 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 - [x] make whole website responsive 
 - [x] collectables-print
 - [x] OUT of Stock 
-- [ ] add mock data  
-- [ ] lazy loading
+- [x] dynamic pages
+- [x] add mock data  
+- [X] lazy loading
+- [ ]  style lazy loading
 - [ ] state management
-- [ ] dynamic pages
-- [ ] fine tune
+- [ ] fine tune (shop item)
 - [ ] add content for  doc pages

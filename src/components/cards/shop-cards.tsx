@@ -2,6 +2,7 @@ import { FC } from "react";
 import { cn } from "@/utils/tailwind-class";
 import Image, { StaticImageData } from "next/image";
 import { BsArrowRight } from "react-icons/bs";
+import Link from "next/link";
 
 interface ShopCardProp {
   collection: string;
@@ -32,7 +33,10 @@ const ShopCard: FC<ShopCardProp> = ({ collection, tag, path, price }) => {
           <span className="text-card-text text-xs font-thin"> {collection} </span>
           <span className="text-card-text text-xl">
             {" "}
-            <BsArrowRight size={25} />
+    <Link href='/shop/2'>
+              <BsArrowRight size={25} />
+            </Link>    
+
           </span>
         </div>
       </div>

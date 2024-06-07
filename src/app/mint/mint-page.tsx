@@ -34,10 +34,10 @@ const MintPage = () => {
             <label>description </label>
             <textarea className='w-full border-nav border-2 p-2 outline-none h-[100px]' />
           </div>
-          <Button name='MINT NFT ' className="bg-nav-button" />
+          <Button name='MINT NFT' className="bg-nav-button font-bold" />
         </div>
 
-        <div className='w-full md:w-1/2 md:ml-5 py-10 bg-nav flex justify-center items-center'>
+        <div className='w-full md:w-1/2 md:ml-5 py-10 bg-your-nft flex justify-center items-center'>
           <RecentlyPrinted path={RecentCard} name="COOL LOOKING" details="MAGNET" time="16H AGO" inStock={true} />
 
         </div>

@@ -17,13 +17,14 @@ const About = () => {
             {" "}
             We know that you care how information about you is used and shared, and we appreciate
             your trust that we will do so carefully and sensibly. This Privacy Notice describes how
-            NFTPRO.com and its affiliates (collectively "NFTPRO") collect and process your personal
-            information through NFTPRO websites, devices, products, services, online and physical
-            stores, and applications that reference this Privacy Notice (together "NFTPRO "). By
-            using NFTPRO Services, you are consenting to the practices described in this Privacy
-            Notice. Please read our Additional State-Specific Privacy Disclosures and Consumer
-            Health Data Privacy Disclosure for additional information about the processing of your
-            personal data and your rights under applicable U.S. state data privacy laws.
+            NFTPRO.com and its affiliates (collectively &quot;NFTPRO&quot;) collect and process your
+            personal information through NFTPRO websites, devices, products, services, online and
+            physical stores, and applications that reference this Privacy Notice (together
+            &quot;NFTPRO &quot;). By using NFTPRO Services, you are consenting to the practices
+            described in this Privacy Notice. Please read our Additional State-Specific Privacy
+            Disclosures and Consumer Health Data Privacy Disclosure for additional information about
+            the processing of your personal data and your rights under applicable U.S. state data
+            privacy laws.
           </p>
         </div>
       </div>

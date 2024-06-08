@@ -1,7 +1,7 @@
 export const nav = [
-  { name: "SHOP", link: "shop" },
-  { name: "CREDIT", link: "credit" },
-  { name: "HOW TO PRINT", link: "how-to-print" },
-  { name: "MINT", link: "mint" },
-  { name: "COLLECTABLES", link: "collectables" },
+  { name: "SHOP", link: "/shop" },
+  { name: "CREDIT", link: "/credit" },
+  { name: "HOW TO PRINT", link: "/how-to-print" },
+  { name: "MINT", link: "/mint" },
+  { name: "COLLECTABLES", link: "/collectables" },
 ];

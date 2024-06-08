@@ -27,16 +27,15 @@ const ShopCard: FC<ShopCardProp> = ({ collection, tag, path, price }) => {
       <div className="flex w-full py-2 justify-between items-center border-r-2 bg-white border-l-2 border-b-2 border-default-border">
         <div className="textext-left pl-2 text-nav-text text-sm">
           <span className="font-black text-xl uppercase">${price}</span>
-          <span className="block text-card-text font-thin text-xs">{tag}</span>
+          <span className="block text-card-text uppercase text-xs">{tag}</span>
         </div>
         <div className="flex flex-col justify-center items-center pr-2">
-          <span className="text-card-text text-xs font-thin"> {collection} </span>
+          <span className="text-card-text text-xs uppercase "> {collection} </span>
           <span className="text-card-text text-xl">
             {" "}
-    <Link href='/shop/2'>
+            <Link href="/shop/2">
               <BsArrowRight size={25} />
-            </Link>    
-
+            </Link>
           </span>
         </div>
       </div>

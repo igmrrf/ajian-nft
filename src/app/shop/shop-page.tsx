@@ -2,7 +2,6 @@ import ShopCard from "@/components/cards/shop-cards";
 import ghost1 from "/public/images/get_your_own/2.png";
 import { BsArrowRight, BsArrowLeft } from "react-icons/bs";
 import cardsMock from "@/mock-data/shop-mock";
-import { StaticImageData } from "next/image";
 
 const ShopPage = () => {
   return (

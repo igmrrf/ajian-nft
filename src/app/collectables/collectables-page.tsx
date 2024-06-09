@@ -1,5 +1,4 @@
 "use client";
-import cn from "@/utils/tailwind-class";
 import React, { useState } from "react";
 import UserCard from "@/components/cards/collectables/user-card";
 import banner from "/public/banner.png";

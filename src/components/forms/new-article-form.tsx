@@ -1,5 +1,6 @@
 "use client";
 import Button from "@/components/button";
+import ButtonNoArrow from "@/components/buttons/button-no-arrow";
 import { BsQuestionCircle } from "react-icons/bs";
 // import SimpleMDE from "react-simplemde-editor";
 import "easymde/dist/easymde.min.css";
@@ -96,7 +97,10 @@ const NewArticleForm = () => {
           />
           {errors?.article && <p className="text-red-100"> {errors.article.message}</p>}
         </div>
-        <Button name="MINT NFT " className="bg-nav-button" />
+        <div className="space-x-5">
+          <ButtonNoArrow name="CANCEL " className="bg-[#DEDBEF] font-bold" />
+          <Button name="SEND " className="bg-nav-button font-bold" />
+        </div>
       </form>
     </div>
   );

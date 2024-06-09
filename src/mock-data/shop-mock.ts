@@ -30,6 +30,5 @@ for (let i = 0; i < 20; i++) {
   };
   cardsMock.push(card);
 }
-console.log(cardsMock);
 
 export default cardsMock;

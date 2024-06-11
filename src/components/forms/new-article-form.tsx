@@ -87,7 +87,7 @@ const NewArticleForm = () => {
         </div>
 
         <div className="w-full">
-          <label className="text-card-text">description </label>
+          <label className="text-card-text">Content</label>
           <Controller
             name="article"
             control={control}

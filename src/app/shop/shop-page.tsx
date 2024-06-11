@@ -14,7 +14,7 @@ const ShopPage = () => {
         </p>
         <h3 className="font-black text-3xl md:text-5xl text-nav-text">BROWSE MERCH </h3>
       </div>
-      {/* TODO: filter */}
+      {/*  filter */}
 
       <div className="w-full flex px-5 py-3 mb-2 items-center justify-between">
         <p className="text-card-text">
@@ -23,7 +23,7 @@ const ShopPage = () => {
         </p>
         <div className="flex space-x-2">
           <div
-            className="w-full overflow-hidden flex items-center  rounded-md 
+            className="w-full overflow-hidden items-center  rounded-md 
 block relative after:content-['\25BC'] after:absolute after:right-4 after:text-white
 after:pointer-events-none"
           >
@@ -34,7 +34,7 @@ after:pointer-events-none"
           </div>
 
           <div
-            className="w-full overflow-hidden flex items-center  rounded-md 
+            className="w-full overflow-hidden items-center  rounded-md 
 block relative after:content-['\25BC'] after:absolute after:right-4 after:text-white
 after:pointer-events-none"
           >

@@ -8,28 +8,28 @@ const config: Config = {
   ],
   theme: {
     colors: {
-      'nav': "#DEDBEF",
-      'nav-button': "#F6C33A",
-      'nav-text': "#101828",
-      "footer": "#000000",
+      nav: "#DEDBEF",
+      "nav-button": "#F6C33A",
+      "nav-text": "#101828",
+      footer: "#000000",
       "footer-text": "#6F6F6F",
-      "white": "#ffffff",
+      white: "#ffffff",
       "default-border": "#CFCFCF",
       "body-text": "#475467",
       "card-text": "#909090",
-      "mail": "#EB631D",
-      "coral": "#1F2342",
-      "your-nft": "#F3F5F8"
+      mail: "#EB631D",
+      coral: "#1F2342",
+      "your-nft": "#F3F5F8",
     },
     extend: {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
       },
       fontFamily: {
-        sans: ['var(--font-open-sans)'],
-      }
+        sans: ["var(--font-open-sans)"],
+      },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/forms")],
 };
 export default config;

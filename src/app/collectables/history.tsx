@@ -9,8 +9,8 @@ const History = () => {
         <p className="text-coral font-black"> YOUR PREVIOUS PURCHASES</p>
         <div className="flex space-x-2">
           <div
-            className="w-full overflow-hidden items-center  rounded-md 
-block relative after:content-['\25BC'] after:absolute after:right-4 after:text-white
+            className="w-full overflow-hidden flex items-center  rounded-md 
+relative after:content-['\25BC'] after:absolute after:right-4 after:text-white
 after:pointer-events-none"
           >
             <select className="bg-card-text py-2 pl-2 pr-8 w-full outline-none text-white appearance-none">
@@ -20,8 +20,8 @@ after:pointer-events-none"
           </div>
 
           <div
-            className="w-full overflow-hidden items-center  rounded-md 
-block relative after:content-['\25BC'] after:absolute after:right-4 after:text-white
+            className="w-full overflow-hidden flex items-center  rounded-md 
+relative after:content-['\25BC'] after:absolute after:right-4 after:text-white
 after:pointer-events-none"
           >
             <select className="bg-card-text py-2 pl-2 pr-8 w-full outline-none text-white appearance-none">

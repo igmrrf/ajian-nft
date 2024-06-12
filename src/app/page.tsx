@@ -91,7 +91,7 @@ export default function Home() {
         <div className="flex flex-col items-center space-y-4 py-10 md:h-[480px] justify-between">
           <div className="flex-col justify-start items-center space-y-4 ">
             <h4 className="text-white text-2xl md:text-4xl font-bold "> MINT THEN PRINT</h4>
-            <Button name="PRINT NFT" className="bg-mail" />
+            <Button name="PRINT NFT" className="bg-mail text-white font-bold" />
           </div>
           <p className="w-2/3 text-left text-white">
             Choose the product that you want to print your NFT art on and select a size you want.{" "}

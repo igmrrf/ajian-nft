@@ -10,7 +10,7 @@ const ButtonNoArrow: FC<ButtonProps> = ({ name, className, ...props }) => {
     <button
       {...props}
       className={cn(
-        "max-w-[150px] cursor-pointer text-nav-text font-black px-4 py-2  uppercase rounded",
+        "max-w-[150px] cursor-pointer text-nav-text font-black px-4 py-2  uppercase ",
         className,
       )}
     >

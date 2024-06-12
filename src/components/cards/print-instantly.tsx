@@ -24,7 +24,7 @@ const PrintInstantlyCard = () => {
             <h1 className="block md:text-5xl text-3xl font-extrabold">
               Print your own NFT instantly{" "}
             </h1>
-            <ButtonNoArrow name="print nft" className="bg-[#EB631D] text-white " />
+            <ButtonNoArrow name="print nft" className="bg-[#EB631D] text-white font-bold " />
           </div>
         </div>
       </div>

@@ -8,13 +8,12 @@ import PrintNftShirt from "/public/print.png";
 import Button from "@/components/button";
 import Link from "next/link";
 
-
-const NftPage = ({item}:{item: {nft:string}}) => {
+const NftPage = ({ item }: { item: { nft: string } }) => {
   return (
     <div className=" flex min-h-screen flex-col items-center py-10 md:px-36 px-5 pb-20 space-y-10">
       <div className="flex flex-col justify-center items-start space-y-10 py-10 px-8 w-full border-nav border-2">
         <div className="flex justify-start">
-          <Link href='/shop' className="flex font-light">
+          <Link href="/shop" className="flex font-light">
             {" "}
             <span>
               {" "}
@@ -25,11 +24,14 @@ const NftPage = ({item}:{item: {nft:string}}) => {
         </div>
         <div className="flex justify-between w-full">
           {" "}
-          <h4 className="md:text-4xl text-xl font-black"> $255 | NFT PRINT PRO SHIRT </h4>
-          <div className="pt-2 flex flex-col items-center md:flex-row space-x-2 text-black">
+          <h4 className="md:text-4xl text-xl font-black">
+            {" "}
+            $255 <span className="font-thin">|</span> NFT PRINT PRO SHIRT{" "}
+          </h4>
+          <div className="pt-2 flex flex-col items-center md:flex-row space-x-3 text-black">
             <div>
-              {/* TODO remove this  */}
-              <p> share on media{item.nft} </p>
+              {/* TODO: remove this  */}
+              <p className="font-bold"> share on media </p>
             </div>
             {/* icons */}
 
@@ -87,25 +89,42 @@ const NftPage = ({item}:{item: {nft:string}}) => {
               </div>
             </div>
           </div>
-
+          {/* NOTE: select colors checkbox */}
           <div>
             <h5 className="font-bold pb-2">Select Color</h5>
-            <div className="flex space-x-5">
-              <div className="py-5 px-7 border flex bg-black"></div>
-              <div className="py-5 px-7 border flex bg-black"></div>
-              <div className="py-5 px-7 border flex bg-black"></div>
-              <div className="py-5 px-7 border flex bg-black"></div>
-              <div className="flex items-center me-4">
+            <div className="flex space-x-3">
+              <div className="flex items-center">
                 <input
-                  id="green-checkbox"
                   type="checkbox"
                   value=""
-                  className="w-6 h-6 text-nav-button accent-nav-button checked:bg-white border-gray-300 rounded focus:ring-nav-button dark:focus:ring-green-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                  className="w-12 h-8  bg-[#4B54A1] text-[#4B54A1] border-none focus:ring-0 "
                 />
-                <label
-                  htmlFor="green-checkbox"
-                  className="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300"
-                ></label>
+                <label></label>
+              </div>
+
+              <div className="flex items-center">
+                <input
+                  type="checkbox"
+                  value=""
+                  className="w-12 h-8  text-[#EB631D] bg-[#EB631D] border-none focus:ring-0 "
+                />
+                <label></label>
+              </div>
+              <div className="flex items-center">
+                <input
+                  type="checkbox"
+                  value=""
+                  className="w-12 h-8  text-[#F6C33A] bg-[#F6C33A] border-none focus:ring-0 "
+                />
+                <label></label>
+              </div>
+              <div className="flex items-center">
+                <input
+                  type="checkbox"
+                  value=""
+                  className="w-12 h-8 text-[#1DA1F2] bg-[#1DA1F2] border-none focus:ring-0 "
+                />
+                <label></label>
               </div>
             </div>
           </div>

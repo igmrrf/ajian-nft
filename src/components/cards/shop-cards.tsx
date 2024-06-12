@@ -12,12 +12,12 @@ interface ShopCardProp {
   inStock?: boolean;
 }
 
-const ShopCard: FC<ShopCardProp> = ({ collection, tag, path, price , inStock}) => {
+const ShopCard: FC<ShopCardProp> = ({ collection, tag, path, price, inStock }) => {
   return (
     <div className={cn(" flex items-center flex-col ")}>
       <div className="relative w-[200px] h-[250px]">
         {!inStock && (
-          <p className="bg-[#4B54A1] text-white py-1 px-2 uppercase z-10 top-5 left-5 text-sm font-bold rounded absolute">
+          <p className="bg-[#4B54A1] text-white py-1 px-2 uppercase z-10 bottom-5 left-5 text-sm font-bold rounded absolute">
             Out of stock{" "}
           </p>
         )}
@@ -30,14 +30,14 @@ const ShopCard: FC<ShopCardProp> = ({ collection, tag, path, price , inStock}) =
           className="object-cover overflow-hidden"
         />
       </div>
-      <div className="flex w-full py-2 justify-between items-center border-r-2 bg-white border-l-2 border-b-2 border-default-border">
+      <div className="flex w-full py-2 justify-between items-center bg-your-nft">
         <div className="textext-left pl-2 text-nav-text text-sm">
           <span className="font-black text-xl uppercase">${price}</span>
           <span className="block text-card-text uppercase text-xs">{tag}</span>
         </div>
         <div className="flex flex-col justify-center items-center pr-2">
           <span className="text-card-text text-xs uppercase "> {collection} </span>
-          <span className="text-card-text text-xl">
+          <span className="text-card-text text-xl hover:font-black">
             {" "}
             <Link href="/shop/2">
               <BsArrowRight size={25} />

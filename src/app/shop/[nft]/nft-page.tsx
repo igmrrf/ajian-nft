@@ -73,18 +73,19 @@ const NftPage = ({ item }: { item: { nft: string } }) => {
             </p>
           </div>
           <div>
+          {/* NOTE: select size checkbox */}
             <h5 className="font-bold pb-2">Select Size</h5>
             <div className="flex space-x-5">
-              <div className="py-2 px-4 border flex justify-center items-center">
+              <div className="w-12 h-8 border flex justify-center items-center">
                 <p>xs </p>{" "}
               </div>
-              <div className="py-2 px-4 border flex justify-center items-center">
+              <div className="w-12 h-8 border flex justify-center items-center">
                 <p>xs </p>{" "}
               </div>
-              <div className="py-2 px-4 border flex justify-center items-center">
+              <div className="w-12 h-8 border flex justify-center items-center">
                 <p>xs </p>{" "}
               </div>
-              <div className="py-2 px-4 border flex justify-center items-center">
+              <div className="w-12 h-8 border flex justify-center items-center">
                 <p>xs </p>{" "}
               </div>
             </div>

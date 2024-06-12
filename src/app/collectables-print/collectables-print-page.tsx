@@ -15,7 +15,7 @@ const CollectablesPrintPage = () => {
     <div className=" flex min-h-screen flex-col items-center py-10 md:px-36 px-5 pb-20 space-y-10">
       <div className="flex flex-col justify-center items-start space-y-10 py-10 px-8 w-full border-nav border-2">
         <div className="flex justify-start">
-          <p className="flex font-light">
+          <p className="flex gap-2 font-light">
             {" "}
             <span>
               {" "}
@@ -67,7 +67,7 @@ const CollectablesPrintPage = () => {
         </div>
         <div className="w-full flex flex-row justify-between items-center">
           <div className="flex flex-row space-x-4 justify-start items-center">
-            <select className="font-bold text-coral px-5 py-2 border-2 border-nav bg-white">
+            <select className="font-bold text-coral px-8 py-2 border-2 border-nav bg-white">
               <option> 4 X 4 magnet</option>
               <option> 4 X 4 magnet</option>
               <option> 4 X 4 magnet</option>

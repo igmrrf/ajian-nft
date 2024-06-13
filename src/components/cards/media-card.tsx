@@ -17,7 +17,7 @@ const MediaCard: FC<GetMediaNft> = ({ name, tag, path, date , description}) => {
       <div className="relative w-[250px] h-[250px]">
         <Image src={path} alt={description} fill className="object-cover overflow-hidden" />
       </div>
-      <div className="flex flex-row w-full py-2 justify-between items-center border-r-2 bg-white border-l-2 border-b-2 border-default-border ">
+      <div className="flex flex-col w-full py-2 justify-between items-center border-r-2 bg-white border-l-2 border-b-2 border-default-border ">
 <div className="w-full flex-col flex ">
           <p className="text-2xl font-bold">{name}</p>
           <p className="text-card-text font-bold">{date}</p>

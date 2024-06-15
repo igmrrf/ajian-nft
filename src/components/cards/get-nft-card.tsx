@@ -16,7 +16,7 @@ const GetNFTCard: FC<GetNFTCardType> = ({ collection, tag, path, price }) => {
       <div className="relative w-[250px] h-[250px]">
         <Image src={path} alt={tag} fill className="object-cover overflow-hidden" />
       </div>
-      <div className="flex w-full py-2 justify-between items-center border-r-2 bg-white border-l-2 border-b-2 border-default-border ">
+      <div className="flex w-full py-2 justify-between items-center border-r-2 bg-white border-l-2 border-b-2 border-default-border hover:bg-[#FCE1D5]">
         <div className="textext-left pl-2 text-nav-text text-sm">
           <span className="font-black text-xl uppercase">${price}</span>
           <span className="block text-card-text font-thin text-xs">{tag}</span>

@@ -7,11 +7,27 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import { createCheckoutCardSchema } from "../form-validators/validationSchema";
 import Button from "../button";
+import { useState } from "react";
 type CardForm = z.infer<typeof createCheckoutCardSchema>;
 
 const CheckoutCard = () => {
   const countries = Country.getAllCountries();
   const states = State.getAllStates();
+  const [country, setCountry] = useState();
+  // const [state, setStates] = useState();
+  let newStates = [];
+
+  console.log(countries);
+  const availableState = countries.map((count) => {
+    states.map((state) => {
+      if (state.isoCode === count.isoCode) {
+        newStates.push(state);
+      }
+    });
+  });
+
+  //TODO: replace with implementation
+  // }
 
   const {
     register,
@@ -45,6 +61,7 @@ const CheckoutCard = () => {
               <label>Enter country* </label>
               <div className="w-full border-nav border-2 flex items-center ">
                 <select
+                  onChange={(e) => setState(e.target.value)}
                   className="p-2 w-full outline-none text-coral"
                   {...register("country", { required: "select your country" })}
                 >
@@ -59,6 +76,7 @@ const CheckoutCard = () => {
               <label>Enter state* </label>
               <div className="w-full border-nav border-2 flex items-center ">
                 <select
+                  onChange={(e) => setCountry(e.target.value)}
                   className="p-2 w-full outline-none text-coral"
                   {...register("state", { required: "select your state" })}
                 >

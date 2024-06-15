@@ -23,14 +23,14 @@ const ShopPage = () => {
         </p>
         <div className="flex space-x-2">
           <div className="w-full">
-            <select className="bg-card-text py-2 px-4 w-full outline-none text-white appearance-none border-none focus:border-none focus:ring-0">
+            <select className="bg-card-text py-2 px-4 w-full outline-none text-white font-bold appearance-none border-none focus:border-none focus:ring-0">
               <option selected>Filter 1</option>
               <option>Thrila rocks</option>
             </select>
           </div>
 
           <div className="w-full">
-            <select className="bg-card-text py-2 px-4 w-full outline-none text-white appearance-none border-none focus:border-none focus:ring-0">
+            <select className="bg-card-text py-2 px-4 w-full outline-none text-white font-bold appearance-none border-none focus:border-none focus:ring-0">
               <option selected>Filter 1</option>
               <option>Thrila rocks</option>
             </select>

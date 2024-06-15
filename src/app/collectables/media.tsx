@@ -7,7 +7,6 @@ const Media = () => {
       <MediaCard name="MY STORY HOW I MADE A COOL NFT FROM SCRATCH" path={cool} date="24/12/24" tag={['Story', 'Topic']}  description="Magnet" />
       <MediaCard name="MY STORY HOW I MADE A COOL NFT FROM SCRATCH" path={cool} date="24/12/24" tag={['Story', 'Topic']}  description="Magnet" />
       <MediaCard name="MY STORY HOW I MADE A COOL NFT FROM SCRATCH" path={cool} date="24/12/24" tag={['Story', 'Topic']}  description="Magnet" />
-
     </div>
   )
 }

@@ -17,7 +17,7 @@ const CreditPage = () => {
         </div>
       </div>
 
-      <div className="w-full flex flex-row justify-between flex-wrap">
+      <div className="w-full flex flex-col md:flex-row justify-between items-center gap-5 flex-wrap">
         <GetCredit collection="1,500" tag="15% DISCOUNT" price="250 Credits" path={money} />
         <GetCredit collection="1,500" tag="15% DISCOUNT" price="500 Credits" path={money} />
         <GetCredit collection="1,500" tag="15% DISCOUNT" price="1000 Credits" path={money} />

@@ -1,10 +1,11 @@
 "use client";
 import { BsQuestionCircle } from "react-icons/bs";
 import { useForm } from "react-hook-form";
-import { useRouter } from "next/navigation";
-import { Country, State, City } from "country-state-city";
+// import { useRouter } from "next/navigation";
+import { Country, State } from "country-state-city";
+import { IState} from "country-state-city";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { z } from "zod";
+import { set, z } from "zod";
 import { createCheckoutCardSchema } from "../form-validators/validationSchema";
 import Button from "../button";
 import { useState } from "react";
@@ -12,22 +13,7 @@ type CardForm = z.infer<typeof createCheckoutCardSchema>;
 
 const CheckoutCard = () => {
   const countries = Country.getAllCountries();
-  const states = State.getAllStates();
-  const [country, setCountry] = useState();
-  // const [state, setStates] = useState();
-  let newStates = [];
-
-  console.log(countries);
-  const availableState = countries.map((count) => {
-    states.map((state) => {
-      if (state.isoCode === count.isoCode) {
-        newStates.push(state);
-      }
-    });
-  });
-
-  //TODO: replace with implementation
-  // }
+  const [states, setState] = useState<Array<IState>>(State.getStatesOfCountry("AO"));
 
   const {
     register,
@@ -50,37 +36,44 @@ const CheckoutCard = () => {
                 type="text"
                 placeholder="Title"
                 {...register("name", { required: "Title is required" })}
-                className="p-2 w-full outline-none"
+                className="p-2 w-full outline-none focus:border-none border-none ring-0 focus:ring-0"
               />
               <BsQuestionCircle size={25} />
             </div>
           </div>
           <div className="w-full flex flex-col md:gap-5 md:flex-row">
-            {/* enter email */}
+            {/* enter country */}
             <div className="w-full md:w-1/2  text-card-text font-bold">
               <label>Enter country* </label>
               <div className="w-full border-nav border-2 flex items-center ">
                 <select
-                  onChange={(e) => setState(e.target.value)}
                   className="p-2 w-full outline-none text-coral"
                   {...register("country", { required: "select your country" })}
+                  onChange={(e) => {
+                    countries.find((item) => {
+                      if (item.name === e.target.value) {
+                        return setState(State.getStatesOfCountry(item.isoCode))
+                      }
+                    });
+                  }}
                 >
-                  {countries.map((country) => (
-                    <option key={country.phonecode}>{country.name}</option>
+                  <option>Country</option>
+                  {countries?.map((country) => (
+                    <option key={country.isoCode}>{country.name}</option>
                   ))}
                 </select>
               </div>
             </div>
-            {/* enter phone*/}
+            {/* enter State*/}
             <div className="w-full md:w-1/2  text-card-text font-bold">
               <label>Enter state* </label>
               <div className="w-full border-nav border-2 flex items-center ">
                 <select
-                  onChange={(e) => setCountry(e.target.value)}
                   className="p-2 w-full outline-none text-coral"
                   {...register("state", { required: "select your state" })}
                 >
-                  {states.map((state) => (
+                  <option>State</option>
+                  {states?.map((state) => (
                     <option key={state.name}>{state.name}</option>
                   ))}
                 </select>
@@ -100,7 +93,7 @@ const CheckoutCard = () => {
                 type="text"
                 placeholder="card number"
                 {...register("cardNo", { required: "Title is required" })}
-                className="p-2 w-full outline-none"
+                className="p-2 w-full outline-none focus:border-none border-none ring-0 focus:ring-0"
               />
               <BsQuestionCircle size={25} />
             </div>
@@ -113,7 +106,7 @@ const CheckoutCard = () => {
                   type="text"
                   placeholder="expiration number"
                   {...register("date", { required: "Title is required" })}
-                  className="p-2 w-full outline-none"
+                  className="p-2 w-full outline-none focus:border-none border-none ring-0 focus:ring-0"
                 />
                 <BsQuestionCircle size={25} />
               </div>
@@ -125,7 +118,7 @@ const CheckoutCard = () => {
                   type="text"
                   placeholder="cvv"
                   {...register("cvv", { required: "Title is required" })}
-                  className="p-2 w-full outline-none"
+                  className="p-2 w-full outline-none focus:border-none border-none ring-0 focus:ring-0"
                 />
                 <BsQuestionCircle size={25} />
               </div>

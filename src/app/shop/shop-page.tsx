@@ -16,8 +16,8 @@ const ShopPage = () => {
       </div>
       {/*  filter */}
 
-      <div className="w-full flex flex-col md:flex-row py-3 mb-2 items-center justify-between">
-        <p className="text-card-text">
+      <div className="w-full flex flex-col md:flex-row md:py-3 mb-2 md:items-center space-y-5 md:space-y-0 justify-between">
+        <p className="text-card-text text-left">
           {" "}
           Home /<span className="text-footer">Magnets</span>
         </p>
@@ -35,7 +35,7 @@ const ShopPage = () => {
               <option>Thrila rocks</option>
             </select>
           </div>
-          <div className="text-footer px-6 w-full py-2 ">
+          <div className="text-footer px-2 md:px-6 w-full py-2 ">
             {" "}
             <p className="inline-block">Reset Filters</p>
           </div>

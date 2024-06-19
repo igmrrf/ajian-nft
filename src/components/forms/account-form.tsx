@@ -27,7 +27,11 @@ const AccountForm = () => {
                   Accepts .gif .jpg and .png
                 </label>
               </div>
-              <input id="file" className="hidden" type="file" />
+              <input
+                id="file"
+                className="hidden focus:border-none border-none ring-0 focus:ring-0"
+                type="file"
+              />
             </div>
           </div>
         </div>
@@ -40,7 +44,7 @@ const AccountForm = () => {
                 <input
                   type="text"
                   placeholder="Enter a Name for Your Placeholder"
-                  className="p-2 w-full outline-none"
+                  className="p-2 w-full outline-none focus:border-none border-none ring-0 focus:ring-0"
                 />
                 <BsQuestionCircle size={25} />
               </div>
@@ -51,7 +55,7 @@ const AccountForm = () => {
                 <input
                   type="text"
                   placeholder="Enter a Name for Your Placeholder"
-                  className="p-2 w-full outline-none"
+                  className="p-2 w-full outline-none focus:border-none border-none ring-0 focus:ring-0"
                 />
                 <BsQuestionCircle size={25} />
               </div>
@@ -64,7 +68,10 @@ const AccountForm = () => {
               0x634566Ac61f8B5448f92f9E812350978824aAf2DDDD
             </p>
             <div className="flex space-x-2 items-center mb-5">
-              <input type="checkbox" className="px-2" />
+              <input
+                type="checkbox"
+                className="px-2 focus:border-none border-none ring-0 focus:ring-0"
+              />
               <p className="text-coral md:text-xl">
                 {" "}
                 I want to receive email for Order notifications
@@ -83,7 +90,7 @@ const AccountForm = () => {
                 <input
                   type="text"
                   placeholder="Enter a Name for Your Placeholder"
-                  className="p-2 w-full outline-none"
+                  className="p-2 w-full outline-none focus:border-none border-none ring-0 focus:ring-0"
                 />
                 <BsQuestionCircle size={25} />
               </div>
@@ -94,7 +101,7 @@ const AccountForm = () => {
                 <input
                   type="text"
                   placeholder="Enter a Name for Your Placeholder"
-                  className="p-2 w-full outline-none"
+                  className="p-2 w-full outline-none focus:border-none border-none ring-0 focus:ring-0"
                 />
                 <BsQuestionCircle size={25} />
               </div>
@@ -108,7 +115,7 @@ const AccountForm = () => {
                 <input
                   type="text"
                   placeholder="Enter a Name for Your Placeholder"
-                  className="p-2 w-full outline-none"
+                  className="p-2 w-full outline-none focus:border-none border-none ring-0 focus:ring-0"
                 />
                 <BsQuestionCircle size={25} />
               </div>
@@ -119,7 +126,7 @@ const AccountForm = () => {
                 <input
                   type="text"
                   placeholder="Enter a Name for Your Placeholder"
-                  className="p-2 w-full outline-none"
+                  className="p-2 w-full outline-none focus:border-none border-none ring-0 focus:ring-0"
                 />
                 <BsQuestionCircle size={25} />
               </div>
@@ -138,7 +145,7 @@ const AccountForm = () => {
                 <input
                   type="text"
                   placeholder="Enter a Name for Your Placeholder"
-                  className="p-2 w-full outline-none"
+                  className="p-2 w-full outline-none focus:border-none border-none ring-0 focus:ring-0"
                 />
                 <BsQuestionCircle size={25} />
               </div>
@@ -149,7 +156,7 @@ const AccountForm = () => {
                 <input
                   type="text"
                   placeholder="Enter a Name for Your Placeholder"
-                  className="p-2 w-full outline-none"
+                  className="p-2 w-full outline-none focus:border-none border-none ring-0 focus:ring-0"
                 />
                 <BsQuestionCircle size={25} />
               </div>
@@ -160,7 +167,7 @@ const AccountForm = () => {
                 <input
                   type="text"
                   placeholder="Enter a Name for Your Placeholder"
-                  className="p-2 w-full outline-none"
+                  className="p-2 w-full outline-none focus:border-none border-none ring-0 focus:ring-0"
                 />
                 <BsQuestionCircle size={25} />
               </div>

@@ -51,7 +51,7 @@ const NewArticleForm = () => {
               type="text"
               placeholder="Title"
               {...register("title", { required: "Title is required" })}
-              className="p-2 w-full outline-none"
+              className="p-2 w-full outline-none focus:border-none border-none ring-0 focus:ring-0"
             />
             <BsQuestionCircle size={25} />
           </div>
@@ -65,7 +65,7 @@ const NewArticleForm = () => {
               type="text"
               placeholder="Subtitle"
               {...register("subtitle", { required: "subtitle is required" })}
-              className="p-2 w-full outline-none"
+              className="p-2 w-full outline-none focus:border-none border-none ring-0 focus:ring-0"
             />
             <BsQuestionCircle size={25} />
           </div>
@@ -79,7 +79,7 @@ const NewArticleForm = () => {
               type="text"
               placeholder="Press enter to save tag"
               {...register("tag", { required: "tags are required" })}
-              className="p-2 w-full outline-none"
+              className="p-2 w-full outline-none focus:border-none border-none ring-0 focus:ring-0"
             />
             <BsQuestionCircle size={25} />
           </div>

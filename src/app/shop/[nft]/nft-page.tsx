@@ -28,10 +28,10 @@ const NftPage = ({ item }: { item: { nft: string } }) => {
             {" "}
             $255 <span className="font-thin">|</span> NFT PRINT PRO SHIRT{" "}
           </h4>
-          <div className="pt-2 flex flex-col items-center md:flex-row space-x-3 text-black">
+          <div className="pt-2 flex flex-col items-center md:flex-row md:space-x-3 text-black">
             <div>
               {/* TODO: remove this  */}
-              <p className="font-bold"> share on media </p>
+              <p className="font-bold text-sm md:text-xl"> share on media </p>
             </div>
             {/* icons */}
 
@@ -73,7 +73,7 @@ const NftPage = ({ item }: { item: { nft: string } }) => {
             </p>
           </div>
           <div>
-          {/* NOTE: select size checkbox */}
+            {/* NOTE: select size checkbox */}
             <h5 className="font-bold pb-2">Select Size</h5>
             <div className="flex space-x-5">
               <div className="w-12 h-8 border flex justify-center items-center">

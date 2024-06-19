@@ -2,6 +2,7 @@ import CartCard from "@/components/cards/cart";
 import React from "react";
 import one from "/public/images/cart/1.png";
 import Button from "@/components/button";
+import Link from "next/link";
 
 const CartPage = () => {
   return (
@@ -43,8 +44,9 @@ const CartPage = () => {
               </div>
 
               <div className="w-full flex justify-center items-center mb-5">
+                <Link href='/checkout'>
                 <Button name="CHECKOUT NOW!" className="bg-nav-button font-black" />
-                {/* <p>man</p> */}
+                </Link>
               </div>
             </div>
           </div>

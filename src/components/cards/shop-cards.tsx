@@ -30,7 +30,7 @@ const ShopCard: FC<ShopCardProp> = ({ collection, tag, path, price, inStock }) =
           className="object-cover overflow-hidden"
         />
       </div>
-      <div className="flex w-full py-2 justify-between items-center bg-your-nft">
+      <div className="flex w-[200px] py-2 justify-between items-center bg-your-nft">
         <div className="textext-left pl-2 text-nav-text text-sm">
           <span className="font-black text-xl uppercase">${price}</span>
           <span className="block text-card-text uppercase text-xs">{tag}</span>

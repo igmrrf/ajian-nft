@@ -140,9 +140,9 @@ export default function Home() {
             anyone that signs up through your link{" "}
           </p>
           <div className="flex flex-col items-center space-y-2 md:flex-row md:space-y-0 md:space-x-2">
-            <div className=" border-2 border-black w-[250px] py-1 ">
+            <div className=" border-2 border-black w-[250px] ">
               <input
-                className="outline-0 w-full text-md pl-2 placeholder-text-black"
+                className="outline-0 w-full text-md pl-2 placeholder-text-black focus:border-none border-none ring-0 focus:ring-0"
                 placeholder="Enter email address"
                 type="email"
               />

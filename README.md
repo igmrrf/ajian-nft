@@ -46,15 +46,15 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 - [x] add mock data  
 - [X] lazy loading
 - [x] add content for  doc pages
+- [x] fine tune (shop item)
 - [ ]  style lazy loading
 - [ ]   Notification modal 
 - [ ] state management
-- [ ] fine tune (shop item)
  
 #### Pages and Work remaining on them
 | HomePage         | Shop                    | Shop Product        | How it works | Mint                 | Credits               | Cart                | User Profile(my art) | Collectables | Print                  | Media           | History                  | New Article | Card               | Crypto                 | Settings | Your NFTs      |
 | ---------------- | ----------------------- | ------------------- | ------------ | -------------------- | --------------------- | ------------------- | -------------------- | ------------ | ---------------------- | --------------- | ------------------------ | ----------- | ------------------ | ---------------------- | -------- | -------------- |
-| Image Carosel    | ✅Card out of stock label |✅select size         |              | ✅change card bg shade | card with input field |✅fix checkout button |✅highlight on hover   |              | ✅find and possibly redo |✅customise cards |✅make dropdown functional |✅fix buttons | fix enter state    | fix enter state        | revisit  |✅add filter     |
-| Tips Card(icons) | ✅card filter             |✅select color button |              | ✅button darker        |                       |                     |                      |              |                        |                 |                          |             | fix card highlight | <br>fix card highlight |          | add more cards |
-| card red bg      |                         |✅arrow buttons       |              |                      |                       |                     |                      |              |                        |                 |                          |             |                    | add pay with bitpay    |          | add arrows     |
+| Image Carosel    | ✅Card out of stock label |✅select size         |              | ✅change card bg shade |✅card with input field |✅fix checkout button |✅highlight on hover   |              | ✅find and possibly redo |✅customise cards |✅make dropdown functional |✅fix buttons | fix enter state    | fix enter state        | revisit  |✅add filter     |
+|✅Tips Card(icons) | ✅card filter             |✅select color button |              | ✅button darker        |                       |                     |                      |              |                        |                 |                          |             |✅fix card highlight | <br>fix card highlight |          | add more cards |
+|✅card red bg      |                         |✅arrow buttons       |              |                      |                       |                     |                      |              |                        |                 |                          |             |                    | add pay with bitpay    |          | add arrows     |
 |                  |                         |                     |              |                      |                       |                     |                      |              |                        |                 |                          |             |                    |                        |          |                |

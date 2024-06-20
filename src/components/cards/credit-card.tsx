@@ -40,7 +40,7 @@ const GetCredit: FC<GetCreditCard> = ({ collection, tag, path, price }) => {
             </div>
           </div>
           <p className="text-card-text  pr-2"> +3</p>
-          <Button name="PURCHASE" className="bg-nav-button text-sm" />
+          <Button name="PURCHASE" className="bg-nav-button text-sm font-bold" />
         </div>
       </div>
     </div>

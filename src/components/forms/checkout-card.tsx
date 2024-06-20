@@ -14,7 +14,6 @@ type CardForm = z.infer<typeof createCheckoutCardSchema>;
 const CheckoutCard = () => {
   const countries = Country.getAllCountries();
   const [states, setState] = useState<Array<IState>>(State.getStatesOfCountry("AO"));
-
   const {
     register,
     handleSubmit,

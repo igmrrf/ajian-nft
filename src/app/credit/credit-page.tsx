@@ -1,5 +1,6 @@
 import Button from "@/components/button";
 import GetCredit from "@/components/cards/credit-card";
+import CreditInput from "@/components/cards/credit-input-card";
 import React from "react";
 import money from "../../../public/credit.png";
 
@@ -21,6 +22,7 @@ const CreditPage = () => {
         <GetCredit collection="1,500" tag="15% DISCOUNT" price="250 Credits" path={money} />
         <GetCredit collection="1,500" tag="15% DISCOUNT" price="500 Credits" path={money} />
         <GetCredit collection="1,500" tag="15% DISCOUNT" price="1000 Credits" path={money} />
+        <CreditInput price="1000" path={money} />
       </div>
     </div>
   );

@@ -44,12 +44,13 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 - [x] OUT of Stock 
 - [x] dynamic pages
 - [x] add mock data  
-- [X] lazy loading
+- [x] lazy loading
 - [x] add content for  doc pages
 - [x] fine tune (shop item)
-- [ ]  style lazy loading
+- [x]  style lazy loading
 - [ ]   Notification modal 
 - [ ] state management
+- [ ] more better state management
  
 #### Pages and Work remaining on them
 | HomePage         | Shop                    | Shop Product        | How it works | Mint                 | Credits               | Cart                | User Profile(my art) | Collectables | Print                  | Media           | History                  | New Article | Card               | Crypto                 | Settings | Your NFTs      |

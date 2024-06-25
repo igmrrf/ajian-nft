@@ -1,6 +1,7 @@
 import { BsArrowRight, BsArrowLeft } from "react-icons/bs";
 import YourNftCard from "@/components/cards/your-nft-card";
 import ghost1 from "/public/images/get_your_own/2.png";
+import { yourNfts } from "@/mock-data/your-nfts-mock";
 
 const YourNftsPage = () => {
   return (
@@ -38,17 +39,10 @@ const YourNftsPage = () => {
           </div>
         </div>
       </div>
-      <div className="w-full flex justify-center md:justify-between items-center flex-wrap gap-2">
-        <YourNftCard name="DIAMOND BODY" path={ghost1} />
-        <YourNftCard name="DIAMOND BODY" path={ghost1} />
-        <YourNftCard name="DIAMOND BODY" path={ghost1} />
-        <YourNftCard name="DIAMOND BODY" path={ghost1} />
-        <YourNftCard name="DIAMOND BODY" path={ghost1} />
-        <YourNftCard name="DIAMOND BODY" path={ghost1} />
-        <YourNftCard name="DIAMOND BODY" path={ghost1} />
-        <YourNftCard name="DIAMOND BODY" path={ghost1} />
-        <YourNftCard name="DIAMOND BODY" path={ghost1} />
-        <YourNftCard name="DIAMOND BODY" path={ghost1} />
+      <div className="w-full grid grid-cols-1 md:grid-cols-4 flex-wrap gap-2">
+        {yourNfts.map((nft)=> (
+        <YourNftCard name={nft.name} path={nft.path} key={nft.id} />
+        ))}
       </div>
       <div className="flex space-x-10 w-full justify-end">
         <p className="flex font-light">

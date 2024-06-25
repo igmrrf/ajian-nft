@@ -14,7 +14,7 @@ const YourNftCard: FC<YourNFTCardType> = ({ name, path }) => {
       <div className="relative w-[250px] h-[250px]">
         <Image src={path} alt={name} fill className="object-cover overflow-hidden" />
       </div>
-      <div className="flex flex-col w-full py-2 justify-between border-r-2 border-l-2 border-b-2 border-your-nft bg-your-nft">
+      <div className="flex flex-col w-[250px]  py-2 justify-between border-r-2 border-l-2 border-b-2 border-your-nft bg-your-nft">
         <div className="text-left pl-2 text-nav-text text-sm">
           <span className="font-black flex flex-col text-xl uppercase">{name}</span>
           {/* <span className="block text-card-text font-thin text-wrap">{details}</span> */}

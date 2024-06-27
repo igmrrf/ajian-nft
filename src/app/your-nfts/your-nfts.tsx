@@ -29,8 +29,8 @@ const YourNftsPage = () => {
 
           <div className="w-full">
             <select className="bg-card-text py-2 px-4 w-full outline-none text-white font-bold appearance-none border-none focus:border-none focus:ring-0">
-              <option selected>Filter 1</option>
-              <option>Thrila rocks</option>
+              <option selected>Filter 2</option>
+              <option>Thrila rocks again</option>
             </select>
           </div>
           <div className="text-footer px-6 w-full py-2 ">
@@ -39,9 +39,9 @@ const YourNftsPage = () => {
           </div>
         </div>
       </div>
-      <div className="w-full grid grid-cols-1 md:grid-cols-4 flex-wrap gap-2">
-        {yourNfts.map((nft)=> (
-        <YourNftCard name={nft.name} path={nft.path} key={nft.id} />
+      <div className="w-full grid grid-cols-1 md:grid-cols-4 gap-2">
+        {yourNfts.map((nft) => (
+          <YourNftCard name={nft.name} path={nft.path} key={nft.id} />
         ))}
       </div>
       <div className="flex space-x-10 w-full justify-end">

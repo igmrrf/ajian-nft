@@ -3,8 +3,6 @@ import LocalFont from "next/font/local";
 import NavBar from "@/components/navbar";
 import Footer from "@/components/footer";
 import "./globals.css";
-import { store } from "@/store/store";
-import { Provider } from "react-redux";
 
 const testFont = LocalFont({
   src: "./OpenSans-VariableFont_wdth,wght.ttf",
@@ -23,7 +21,6 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <Provider store={store}>
       <html lang="en" className={testFont.variable}>
         <body>
           <NavBar />
@@ -31,6 +28,5 @@ export default function RootLayout({
           <Footer />
         </body>
       </html>
-    </Provider>
   );
 }

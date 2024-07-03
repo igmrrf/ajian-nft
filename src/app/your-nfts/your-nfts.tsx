@@ -1,6 +1,5 @@
 import { BsArrowRight, BsArrowLeft } from "react-icons/bs";
 import YourNftCard from "@/components/cards/your-nft-card";
-import ghost1 from "/public/images/get_your_own/2.png";
 import { yourNfts } from "@/mock-data/your-nfts-mock";
 
 const YourNftsPage = () => {

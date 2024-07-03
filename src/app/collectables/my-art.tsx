@@ -14,5 +14,4 @@ const MyArt = () => {
   );
 };
 
-// <div className="w-full  flex md:flex-row flex-col md:justify-evenly justify-center items-center md:items-start  flex-wrap ">
 export default MyArt;

@@ -47,9 +47,11 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 - [x] lazy loading
 - [x] add content for  doc pages
 - [x] fine tune (shop item)
-- [x]  style lazy loading
-- [ ]   Notification modal 
-- [ ] state management
+- [x] Style lazy loading
+- [ ] React Toastify 
+- [ ] Define state data 
+- [ ] Carosel and pagination 
+- [ ] State management
 - [ ] fine tune whole app
  
 #### Pages and Work remaining on them

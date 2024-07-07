@@ -5,7 +5,7 @@ const initialState: any = [
   { id: 2, title: "test2" },
 ];
 
-const shopSlice = createSlice({
+export const shopSlice = createSlice({
   name: "shop",
   initialState,
   reducers: {
@@ -14,3 +14,5 @@ const shopSlice = createSlice({
     },
   },
 });
+export const {test } = shopSlice.actions;
+export default shopSlice.reducer;

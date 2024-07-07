@@ -1,8 +1,8 @@
 "use client";
+import toast, { Toaster } from "react-hot-toast";
 import Button from "@/components/button";
 import ButtonNoArrow from "@/components/buttons/button-no-arrow";
 import { BsQuestionCircle } from "react-icons/bs";
-// import SimpleMDE from "react-simplemde-editor";
 import "easymde/dist/easymde.min.css";
 import { useForm, Controller } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -99,7 +99,11 @@ const NewArticleForm = () => {
         </div>
         <div className="space-x-5">
           <ButtonNoArrow name="CANCEL " className="bg-[#DEDBEF] font-bold" />
-          <Button name="SEND " className="bg-nav-button font-bold" />
+          <Button
+            name="SEND"
+            onClick={() => toast.success("success \n article has been added")}
+            className="bg-nav-button font-bold"
+          />
         </div>
       </form>
     </div>

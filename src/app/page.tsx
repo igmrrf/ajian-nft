@@ -13,6 +13,7 @@ import ghost1 from "../../public/images/get_your_own/2.png";
 import ghost2 from "../../public/images/get_your_own/3.png";
 import ghost3 from "../../public/images/get_your_own/4.png";
 import { BsArrowRight } from "react-icons/bs";
+import { useSelector } from "react-redux";
 
 export default function Home() {
   return (

@@ -6,8 +6,8 @@ import "./globals.css";
 import StoreProvider from "./StoreProvider";
 import { Toaster } from "react-hot-toast";
 
-const testFont = LocalFont({
-  src: "./OpenSans-VariableFont_wdth,wght.ttf",
+const openSansFont = LocalFont({
+  src: "../font/OpenSans-VariableFont_wdth,wght.ttf",
   display: "swap",
   variable: "--font-open-sans",
 });
@@ -24,13 +24,12 @@ export default function RootLayout({
 }>) {
   return (
     <StoreProvider>
-      <html lang="en" className={testFont.variable}>
+      <html lang="en" className={openSansFont.variable}>
         <body>
           <NavBar />
           <Toaster
             position="top-center"
             toastOptions={{
-              // Define default options
               className: "",
               duration: 5000,
               style: {

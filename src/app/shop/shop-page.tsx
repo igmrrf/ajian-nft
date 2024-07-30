@@ -14,8 +14,8 @@ const ShopPage = () => {
         </p>
         <h3 className="font-black text-3xl md:text-5xl text-nav-text">BROWSE MERCH </h3>
       </div>
-      {/*  filter */}
 
+      {/*  filter */}
       <div className="w-full flex flex-col md:flex-row md:py-3 mb-2 md:items-center space-y-5 md:space-y-0 justify-between">
         <p className="text-card-text text-left">
           {" "}

@@ -30,7 +30,6 @@ const NftPage = ({ item }: { item: { nft: string } }) => {
           </h4>
           <div className="pt-2 flex flex-col items-center md:flex-row md:space-x-3 text-black">
             <div>
-              {/* TODO: remove this  */}
               <p className="font-bold text-sm md:text-xl"> share on media </p>
             </div>
             {/* icons */}
